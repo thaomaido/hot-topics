@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+
+/* General styles */
+body {
+  background-color: #b3de8b;
+}
+
+h1 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 2rem;
+  text-shadow:  2px 2px #a09f9f;
+  color: white;
+}
+
+h2 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 2rem;
+  color: #144501
+}
+
+h3 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 1.5rem;
+  color: #144501
+}
+
+p {
+  font-family: 'RocknRoll One', sans-serif;
+  color: #144501;
+}
+
+.masthead {
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#logo {
+  max-width: 7%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header img{
+  width: 100vw;
+  height: auto;
+  text-align: center; 
+}
+
+.nav-bar {
+  background-color: #b3de8b;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-bar ul{
+list-style-type: none;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  font-family: 'RocknRoll One', sans-serif;
+  color: #900206;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-bar a:hover{
+  text-decoration: underline;
+}
+
+.nav-bar a:focus{
+  background-color: white;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.article {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.article img {
+  max-width: 90%;
+  text-align: center;
+}
+
+.card-container {
+  margin: 10%;
+}
+
+.card {
+  padding: 2rem;
+}
+
+
+
+/* Footer styles */
+footer {
+  color: white;
+  background-color: #144501;
+  padding: 3rem;
+}
+
+footer p{
+  color: white;
+  font-size: 1rem;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  font-family: 'RocknRoll One', sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#sm {
+  padding-left: 2rem;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+
+
+/* MEDIA QUERRY */
+
+/* Tablet View */
+@media (min-width: 35rem) and (max-width: 80rem) {
+body {
+      font-size: 1rem;
+  }
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 3rem;
+    text-shadow:  2px 2px #a09f9f;
+    color: white;
+  } 
+
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.nav-bar li a {
+      display: inline;
+      display: block;
+      justify-content: center;
+  }
+
+.article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+.article img {
+    max-width: 70%;
+  }
+
+.post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      column-gap: 5%;
+      row-gap: 10%;
+    }
+    
+.post #text{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+.post p{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-top: 20%;
+      text-align: left;
+    }
+.card-container {
+      column-count: 2;
+      text-align: center;
+    }
+.card-container img{
+      max-width: 100%;
+     }
+     
+}
+
+/* Desktop View */
+@media (min-width: 80rem) {
+body {
+      font-size: 1.25rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav-bar li a {
+    display: inline;
+}
+
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 5rem;
+    text-shadow:  2px 2px #a09f9f;
+    color: white;
+  }
+.post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      column-gap: 5%;
+      row-gap: 10%;
+    }
+    
+.post #text{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+.post p{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-top: 20%;
+      text-align: left;
+    }
+
+.card-container {
+    column-count: 3;
+    text-align: center;
+  }
+.card-container img{
+   max-width: 100%;
+  }
+  
+  
+}
